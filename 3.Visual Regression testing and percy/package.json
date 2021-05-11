@@ -1,0 +1,22 @@
+{
+	"name": "adv-puppeteer",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test-snapshots": "node ./node_modules/jest/bin/jest --config=jest.config.js --detectOpenHandles --forceExit",
+		"test-snapshots-update": "node ./node_modules/jest/bin/jest --config=./jest.config.js --updateSnapshot --detectOpenHandles --forceExit",
+		"test:percy": "npx percy exec -- jest -i './tests-snapshots/__tests__/percy.test.js'"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@percy/puppeteer": "^2.0.0",
+		"chai": "^4.3.4",
+		"jest": "^26.6.3",
+		"jest-image-snapshot": "^4.5.0",
+		"mocha": "^8.3.2",
+		"percy": "^0.28.6",
+		"puppeteer": "^9.1.1"
+	}
+}
