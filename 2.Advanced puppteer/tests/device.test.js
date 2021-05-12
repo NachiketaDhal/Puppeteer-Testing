@@ -27,14 +27,14 @@ describe('Advanced puppeteer testing', () => {
 	// 	await page.waitForTimeout(5000);
 	// });
 
-	// it('Desktop device test', async function () {
+	// it('Tablet device test', async function () {
 	// 	const tablet = puppeteer.devices['iPad landscape'];
 	// 	await page.emulate(tablet);
 	// 	await page.goto('http://example.com');
 	// 	await page.waitForTimeout(5000);
 	// });
 
-	// it('Desktop device test', async function () {
+	// it('Mobile device test', async function () {
 	// 	const mobile = puppeteer.devices['iPhone X'];
 	// 	await page.emulate(mobile);
 	// 	await page.goto('http://example.com');
